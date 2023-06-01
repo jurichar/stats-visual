@@ -1,0 +1,103 @@
+:root {
+    /* Primary */
+    --light_red : hsl(0, 100%, 67%);
+    --orangey_yellow : hsl(39, 100%, 56%);
+    --green_teal : hsl(166, 100%, 37%);
+    --cobalt_blue : hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light_slate_blue : hsl(252, 100%, 67%); /* background */
+    --light_royal_blue : hsl(241, 81%, 54%); /* background */
+
+    --violet_blue : hsla(256, 72%, 46%, 1); /* circle */
+    --persian_blue : hsla(241, 72%, 46%, 0); /* circle */
+    
+    /* Neutral */
+    --white : hsl(0, 0%, 100%);
+    --white : hsl(221, 100%, 96%);
+    --light_lavender : hsl(241, 100%, 89%);
+    --dark_gray_blue : hsl(224, 30%, 27%);
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    font-family: Hanken Grotesk;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures your main takes the full viewport height */
+}
+
+.Left_section {
+    background-color: aqua;
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 30rem;
+    width: 30rem;
+}
+
+.Circle {
+    background-color: red;
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.Big_num {
+    font-size: 30px
+}
+
+.Small_num {
+
+}
+
+.Big_text {
+
+}
+
+.Text {
+    margin: 1rem;
+}
+
+.Right_section {
+    background-color: antiquewhite;
+    height: 30rem;
+    width: 30rem;
+    text-align: center;
+    align-items: center;
+}
+
+.Title_summary {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 1rem;
+}
+
+.Line_reaction, .Line_memory, .Line_verbal, .Line_visual {
+    border-radius: 10px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-right: 1rem;
+}
+
+.Line_reaction {
+    background-color: aliceblue;
+}
+
+.Line_memory {
+    background-color: aquamarine;
+}
+
+.Line_verbal {
+    background-color:hsl(166, 100%, 37%);
+}
+
+.Line_visual {
+    background-color: brown;
+}

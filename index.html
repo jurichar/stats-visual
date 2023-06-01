@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Results summary component</title>
 
-  Your Result
-  76
-  of 100
+    <!-- include css file -->
+    <link rel="stylesheet" href="./style.css" />
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-  Reaction
-  80 / 100
+  <body>
+    <main class="Main">
+      <!-- Use main for the main content of the body -->
+      <section class="Left_section">
+        <!-- Use section for each distinct content section -->
+        <h2 class="Title_result">Your Result</h2>
+        <!-- Use heading for titles -->
+        <div class="Circle">
+          <p class="Big_num">76</p>
+          <!-- Use p for text content -->
+          <p class="Small_num">of 100</p>
+        </div>
 
-  Memory
-  92 / 100
+        <h3 class="Big_text">Great</h3>
+        <!-- Use heading for titles -->
+        <p class="Text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
 
-  Verbal
-  61 / 100
+      <section class="Right_section">
+        <!-- Use section for each distinct content section -->
+        <h2 class="Title_summary">Summary</h2>
+        <div class="Line_reaction">
+          <p class="Text">Reaction</p>
+          <p class="Score">80 / 100</p>
+        </div>
+        <div class="Line_memory">
+          <p class="Text">Memory</p>
+          <p class="Score">92 / 100</p>
+        </div>
+        <div class="Line_verbal">
+          <p class="Text">Verbal</p>
+          <p class="Score">61 / 100</p>
+        </div>
+        <div class="Line_visual">
+          <p class="Text">Visual</p>
+          <p class="Score">72 / 100</p>
+        </div>
+        <button class="Continue-Btn">Continue</button>
+      </section>
+    </main>
 
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer> -->
+  </body>
 </html>
