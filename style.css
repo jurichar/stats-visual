@@ -19,6 +19,9 @@
     --dark_gray_blue : hsl(224, 30%, 27%);
 }
 
+html, body {
+    height: 100%;
+}
 main {
     margin: 0;
     padding: 0;
@@ -27,11 +30,17 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* This ensures your main takes the full viewport height */
+    min-height: 100vh; /* This ensures your main takes the full viewport height */
 }
 
 .Left_section {
-    background-color: aqua;
+    z-index: 2;
+    background: rgb(132,87,255);
+    background: -moz-linear-gradient(180deg, rgba(132,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(132,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    background: linear-gradient(180deg, rgba(132,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8457ff",endColorstr="#2e2be9",GradientType=1);
+    color: white;
     text-align: center;
     align-items: center;
     border-radius: 30px;
@@ -40,8 +49,11 @@ main {
 }
 
 .Circle {
-    background-color: red;
-    display: inline-block;
+    background: rgb(78,33,202);
+    background: -moz-linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 100%);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4e21ca",endColorstr="#2421ca",GradientType=1);    display: inline-block;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
@@ -64,11 +76,26 @@ main {
 }
 
 .Right_section {
-    background-color: antiquewhite;
+    z-index: 1;
     height: 30rem;
     width: 30rem;
     text-align: center;
     align-items: center;
+    position: relative;
+    bottom: 1.5rem;
+    padding-top: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1000px) {
+    .Right_section {
+        right: 1.5rem;
+        padding-left: 1.5rem;
+        bottom: 0;
+        padding-top: 0;
+        border-radius: 0 2rem 2rem 0;
+    }
 }
 
 .Title_summary {
@@ -79,25 +106,43 @@ main {
 
 .Line_reaction, .Line_memory, .Line_verbal, .Line_visual {
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     margin: 1rem;
-    margin-right: 1rem;
+    padding-right: 1rem;
 }
 
 .Line_reaction {
-    background-color: aliceblue;
+    color: var(--light_red);
+    background-color: rgb(255, 218, 218);
 }
 
 .Line_memory {
-    background-color: aquamarine;
+    color: var(--orangey_yellow);
+    background-color: rgb(254, 255, 188);
 }
 
 .Line_verbal {
-    background-color:hsl(166, 100%, 37%);
+    color: var(--green_teal);
+    background-color:hsl(166, 100%, 89%);
 }
 
 .Line_visual {
-    background-color: brown;
+    color: var(--violet_blue);
+    background-color: rgb(203, 211, 255);
+}
+
+.Score {
+    color: grey;
+}
+
+.Continue-Btn {
+    background-color: rgb(36, 39, 63);
+    border: none;
+    width: 93%;
+    height: 3rem;
+    border-radius: 50px;
+    color: white;
+    font-family: Hanken Grotesk;
 }
