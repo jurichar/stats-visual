@@ -35,44 +35,59 @@
   <body>
     <main class="Main">
       <!-- Use main for the main content of the body -->
-      <section class="Left_section">
-        <!-- Use section for each distinct content section -->
-        <h2 class="Title_result">Your Result</h2>
-        <!-- Use heading for titles -->
-        <div class="Circle">
-          <p class="Big_num">76</p>
-          <!-- Use p for text content -->
-          <p class="Small_num">of 100</p>
-        </div>
-
-        <h3 class="Big_text">Great</h3>
-        <!-- Use heading for titles -->
-        <p class="Text">
-          You scored higher than 65% of the people who have taken these tests.
-        </p>
-      </section>
-
-      <section class="Right_section">
-        <!-- Use section for each distinct content section -->
-        <h2 class="Title_summary">Summary</h2>
-        <div class="Line_reaction">
-          <p class="Text">Reaction</p>
-          <p class="Score">80 / 100</p>
-        </div>
-        <div class="Line_memory">
-          <p class="Text">Memory</p>
-          <p class="Score">92 / 100</p>
-        </div>
-        <div class="Line_verbal">
-          <p class="Text">Verbal</p>
-          <p class="Score">61 / 100</p>
-        </div>
-        <div class="Line_visual">
-          <p class="Text">Visual</p>
-          <p class="Score">72 / 100</p>
-        </div>
-        <button class="Continue-Btn">Continue</button>
-      </section>
+      <div class="Big_section">
+        <section class="Left_section">
+          <!-- Use section for each distinct content section -->
+          <h2 class="Title_result">Your Result</h2>
+          <!-- Use heading for titles -->
+          
+          <div class="Circle">
+            <p class="Big_num">76</p>
+            <!-- Use p for text content -->
+            <p class="Small_num">of 100</p>
+          </div>
+          
+          <h3 class="Big_text">Great</h3>
+          <!-- Use heading for titles -->
+          <p class="Text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </section>
+        
+        <section class="Right_section">
+          <!-- Use section for each distinct content section -->
+          <h2 class="Title_summary">Summary</h2>
+          <div class="Line_reaction">
+            <div class="Text_icon">
+              <image class="Icon" src="assets/images/icon-reaction.svg"></image>
+              <p class="Text_sum">Reaction</p>
+            </div>
+            <p class="Score">80 / 100</p>
+          </div>
+          <div class="Line_memory">
+            <div class="Text_icon">
+            <image class="Icon" src="assets/images/icon-memory.svg"></image>
+            <p class="Text_sum">Memory</p>
+            </div>
+            <p class="Score">92 / 100</p>
+          </div>
+          <div class="Line_verbal">
+            <div class="Text_icon">
+            <image class="Icon" src="assets/images/icon-verbal.svg"></image>
+            <p class="Text_sum">Verbal</p>
+            </div>
+            <p class="Score">61 / 100</p>
+          </div>
+          <div class="Line_visual">
+            <div class="Text_icon">
+            <image class="Icon" src="assets/images/icon-visual.svg"></image>
+            <p class="Text_sum">Visual</p>
+            </div>
+            <p class="Score">72 / 100</p>
+          </div>
+          <button class="Continue-Btn">Continue</button>
+        </section>
+      </div>
     </main>
 
     <!-- <footer class="attribution">
